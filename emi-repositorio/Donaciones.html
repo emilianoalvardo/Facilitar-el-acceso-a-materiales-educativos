@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donaciones | Saberes Vivos</title>
+    <link rel="stylesheet" href="Dona css.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header class="header-donaciones">
+        <h1>Apoya la Preservación del Conocimiento</h1>
+        <p>Tu contribución ayuda a mantener vivos los saberes ancestrales.</p>
+    </header>
+
+    <!-- Sección de información sobre donaciones -->
+    <main>
+        <section class="info-donaciones">
+            <h2>¿Por qué donar?</h2>
+            <p>Tu apoyo permite la documentación de técnicas tradicionales, la difusión de conocimientos y la creación de recursos educativos.</p>
+            <p>Cada donación nos ayuda a conectar generaciones y preservar nuestro legado cultural.</p>
+        </section>
+
+        <!-- Opciones de Pago -->
+        <section class="formas-pago">
+            <h2>Elige tu método de pago</h2>
+            <div class="pago-container">
+                <div class="pago-item">
+                    <h3>Tarjeta de Crédito/Débito</h3>
+                    <p>Realiza tu donación con seguridad a través de nuestra pasarela de pago.</p>
+                    <button onclick="window.location.href='pago_tarjeta.html'">Donar con Tarjeta</button>
+                </div>
+
+                <div class="pago-item">
+                    <h3>PayPal</h3>
+                    <p>Haz tu aporte de forma rápida y segura a través de PayPal.</p>
+                    <button onclick="window.location.href='https://paypal.com/donate/example'">Donar con PayPal</button>
+                </div>
+
+                <div class="pago-item">
+                    <h3>Transferencia Bancaria</h3>
+                    <p>Envía tu donación directamente a nuestra cuenta bancaria.</p>
+                    <input type="text" value="Cuenta: 123456789 - Banco BBVA" id="link-transferencia" readonly>
+                    <button onclick="copiarCuenta()">Copiar Datos</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donación Recurrente -->
+        <section class="donacion-recurrente">
+            <h2>¿Quieres apoyar mensualmente?</h2>
+            <p>Conviértete en un donador recurrente y contribuye al desarrollo constante de nuevas iniciativas.</p>
+            <button onclick="window.location.href='suscripcion.html'">Configurar Donación Mensual</button>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2025 Saberes Vivos - Apoyando el conocimiento ancestral</p>
+    </footer>
+
+    <script src="dona jv.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barro Tradicional | Saberes Vivos</title>
+    <link rel="stylesheet" href="barro css.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header class="header-trabajo">
+        <h1>Barro Tradicional</h1>
+        <p>El arte del barro ha sido transmitido de generación en generación, preservando técnicas ancestrales en Michoacán.</p>
+    </header>
+
+    <!-- Sección de imágenes -->
+    <section class="imagenes-trabajo">
+        <h2>Imágenes del proceso</h2>
+        <div class="imagenes-container">
+            <img src="Barro 1.jpg" alt="Modelado del barro">
+            <img src="barro 2.jpg" alt="Piezas en secado">
+            <img src="barro3.jpg" alt="Horneado tradicional">
+        </div>
+    </section>
+
+    <!-- Descripción detallada -->
+    <section class="descripcion-trabajo">
+        <h2>¿Qué es el Barro Tradicional?</h2>
+        <p>El barro tradicional es una técnica milenaria utilizada por artesanos purépechas en Michoacán. Con un proceso manual que involucra la recolección de arcilla, modelado, secado y horneado, cada pieza es única.</p>
+        <p>Este oficio no solo representa arte, sino identidad y cultura. Las técnicas han sido refinadas con el tiempo, incorporando diseños que reflejan la cosmovisión indígena.</p>
+    </section>
+
+    <!-- Formulario de solicitud -->
+    <section class="formulario-solicitud">
+        <h2>Solicita los Materiales para Aprender</h2>
+        <form id="solicitud-form" onsubmit="enviarSolicitud(event)">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" required>
+
+            <label for="materiales">Materiales que necesitas:</label>
+            <textarea id="materiales" rows="4" required></textarea>
+
+            <button type="submit">Enviar Solicitud</button>
+        </form>
+        <p id="mensaje-confirmacion" style="display:none;">Tu solicitud ha sido enviada. Recibirás una aprobación en unos días.</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Saberes Vivos - Preservando el conocimiento ancestral</p>
+    </footer>
+
+    <script src="barro jv.js"></script>
+
+</body>
+</html>

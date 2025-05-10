@@ -1,0 +1,43 @@
+#bitacora {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffa500; /* Color anaranjado */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.bitacora-header {
+    background-color: #8b4513; /* Fondo café */
+    color: white; /* Texto blanco para contraste */
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.log-item {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 5px solid #8b4513;
+    background-color: #faf3e0;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.log-item:hover {
+    transform: scale(1.02);
+}
+
+.log-item h3 {
+    margin: 0;
+    color: #8b4513;
+    font-size: 20px;
+}
+
+.log-item p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    text-align: justify;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saberes Vivos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Saberes Vivos</h1>
+        <p>Lo que no se documenta, se pierde. Lo que se comparte, vive.</p>
+        <button onclick="explorarSaberes()">Explora los saberes de tu región</button>
+    </header>
+    <main>
+        <section id="mapaSaberes">
+            <h2>Mapa de Saberes</h2>
+            <p>Explora los oficios tradicionales por región</p>
+        </section>
+        <section id="historiasVivas">
+            <h2>Historias Vivas</h2>
+            <p>Video-entrevistas con portadores de saberes</p>
+        </section>
+        <section id="aprendeOficio">
+            <h2>Aprende un Oficio</h2>
+            <p>Material educativo para aprender técnicas artesanales</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Saberes Vivos - Plataforma de Conocimientos Tradicionales</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
+

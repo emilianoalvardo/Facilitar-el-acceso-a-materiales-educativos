@@ -1,0 +1,91 @@
+/* Encabezado */
+.header-donaciones {
+    background-color: #8b4513;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Información sobre donaciones */
+.info-donaciones {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Formas de pago */
+.formas-pago {
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3);
+}
+
+.pago-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pago-item {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Donación recurrente */
+.donacion-recurrente {
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    background-color: #8b4513;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Botones */
+button {
+    background-color: #8b4513;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #ffa500;
+}
+
+/* Input para copiar cuenta bancaria */
+input[type="text"] {
+    width: 90%;
+    padding: 8px;
+    border: 2px solid #8b4513;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+/* Pie de página */
+footer {
+    padding: 20px;
+    background-color: #8b4513;
+    color: white;
+    text-align: center;
+}

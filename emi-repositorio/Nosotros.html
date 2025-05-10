@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros | Saberes Vivos</title>
+    <link rel="stylesheet" href="nosotros css.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header class="header-nosotros">
+        <h1>Nosotros</h1>
+        <p>Preservando la sabiduría ancestral para el futuro.</p>
+    </header>
+
+    <!-- Sección principal -->
+    <main>
+        <section class="quienes-somos">
+            <h2>¿Quiénes somos?</h2>
+            <p>Saberes Vivos es una plataforma dedicada a la documentación, difusión y preservación de conocimientos tradicionales. 
+               Creemos que cada oficio artesanal es un legado invaluable que merece ser reconocido y compartido.</p>
+        </section>
+
+        <!-- Sección de Apoyo -->
+        <section class="apoyo">
+            <h2>¿Cómo puedes apoyar?</h2>
+            <div class="apoyo-container">
+                <div class="apoyo-item">
+                    <h3>Voluntariado</h3>
+                    <p>Únete como colaborador en la documentación de saberes y ayúdanos a preservar el conocimiento ancestral.</p>
+                    <button onclick="window.location.href='principal.html'">Más Información</button>
+                </div>
+
+                <div class="apoyo-item">
+                    <h3>Difusión</h3>
+                    <p>Comparte nuestra plataforma y ayuda a dar visibilidad a los artesanos y sus oficios.</p>
+                    <input type="text" value="principal.html" id="link-difusion" readonly>
+                    <button onclick="copiarLink()">Copiar Link</button>
+                </div>
+
+                <div class="apoyo-item">
+                    <h3>Donaciones</h3>
+                    <p>Contribuye para el desarrollo de nuevas herramientas, entrevistas y recursos educativos.</p>
+                    <button onclick="window.location.href='Donaciones.html'">Más Información</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Donaciones -->
+        <section class="donaciones">
+            <h2>Realiza una Donación</h2>
+            <p>Tu apoyo hace posible la documentación y preservación de los saberes tradicionales.</p>
+            <button onclick="window.location.href='Donaciones.html'">Donar Ahora</button>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2025 Saberes Vivos - Preservando el conocimiento tradicional</p>
+    </footer>
+
+    <script src="Nosotros jv.js"></script>
+</body>
+</html>

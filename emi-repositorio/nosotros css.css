@@ -1,0 +1,105 @@
+/* Encabezado */
+.header-nosotros {
+    background-color: #8b4513;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 22px;
+    border-bottom: 5px solid #d2a679;
+}
+
+/* Sección de "Quiénes Somos" */
+.quienes-somos {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.quienes-somos:hover {
+    transform: scale(1.02);
+}
+
+/* Sección de Apoyo */
+.apoyo {
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3);
+}
+
+.apoyo-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.apoyo-item {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.apoyo-item:hover {
+    transform: scale(1.05);
+}
+
+/* Input de difusión */
+input[type="text"] {
+    width: 90%;
+    padding: 8px;
+    border: 2px solid #8b4513;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+/* Botones */
+button {
+    margin-top: 10px;
+    background-color: #8b4513;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #ffa500;
+}
+
+/* Sección de Donaciones */
+.donaciones {
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    background-color: #d36e25;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Pie de página */
+footer {
+    padding: 20px;
+    background-color: #b16b3a;
+    color: white;
+    text-align: center;
+}

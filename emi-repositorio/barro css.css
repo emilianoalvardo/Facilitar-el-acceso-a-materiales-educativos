@@ -1,0 +1,92 @@
+/* Encabezado */
+.header-trabajo {
+    background-color: #8b4513;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Sección de imágenes */
+.imagenes-trabajo {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.imagenes-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.imagenes-container img {
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Sección de descripción */
+.descripcion-trabajo {
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Formulario */
+.formulario-solicitud {
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #8b4513;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid #8b4513;
+}
+
+button {
+    background-color: #8b4513;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #ffa500;
+}
+
+/* Pie de página */
+footer {
+    padding: 20px;
+    background-color: #8b4513;
+    color: white;
+    text-align: center;
+}

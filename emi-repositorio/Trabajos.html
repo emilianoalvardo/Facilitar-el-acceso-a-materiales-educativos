@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explora los Saberes de Michoacán</title>
+    <link rel="stylesheet" href="trabajo css.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header class="header-explora">
+        <h1>Explora los Saberes de Michoacán</h1>
+        <p>Descubre los oficios tradicionales que han dado identidad y cultura a la región.</p>
+    </header>
+
+    <!-- Filtro de búsqueda -->
+    <section class="busqueda">
+        <h2>Filtrar por tipo de saber</h2>
+        <select id="categoria" onchange="filtrarSaberes()">
+            <option value="todos">Todos</option>
+            <option value="artesanias">Artesanías</option>
+            <option value="gastronomia">Gastronomía</option>
+            <option value="agricultura">Agricultura</option>
+            <option value="musica">Música tradicional</option>
+        </select>
+    </section>
+
+    <!-- Saberes tradicionales -->
+    <section class="saberes-container" id="saberes">
+        <!-- Se insertarán dinámicamente los saberes desde JavaScript -->
+    </section>
+
+    <footer>
+        <p>© 2025 Saberes Vivos - Preservando el conocimiento ancestral</p>
+    </footer>
+
+    <script src="traba jv.js"></script>
+
+</body>
+</html>
