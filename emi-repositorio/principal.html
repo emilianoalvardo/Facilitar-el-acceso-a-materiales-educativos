@@ -8,49 +8,82 @@
 </head>
 <body>
 
-    <!-- Encabezado -->
+<!-- Encabezado -->
 <header>
-    <div class="header-container">
-        <div class="header-image">
-            <img src="imagenes/logo.png" alt="Imagen Representativa">
-        </div>
-        <div class="header-text">
-            <h1>Saberes Vivos</h1>
-            <p>Lo que no se documenta, se pierde. Lo que se comparte, vive.</p>
-            <a href="Trabajos.html" class="boton-explora">Explora los Oficios tradicionales de tu región</a>
-        </div>
+  <div class="header-container">
+    <div class="header-image">
+      <img src="icono de la pagna principal.jpg" alt="Imagen Representativa">
     </div>
+    <div class="header-text">
+      <h1>Saberes Vivos</h1>
+      <p>Lo que no se documenta, se pierde. Lo que se comparte, vive.</p>
+      <a href="Trabajos.html" class="boton-explora">Explora los Oficios tradicionales de tu región</a>
+    </div>
+     <div id="userDisplay">Usuario: Invitado</div>
+     <button id="logoutButton" style="display: none;">Cerrar sesión</button>
+  </div>
+  </div>
 </header>
 
-        <div class="header-image">
-            <img src="imagenes/logo.png" alt="Imagen Representativa">
-        </div>
-    </div>
-</header>
+<!-- Sección de Registro -->
+<div class="form-container">
+    <h2>Únete a Saberes Vivos</h2>
+    <form id="registerForm">
+        <label for="email">Correo Electrónico</label>
+        <input type="email" id="email" required placeholder="tucorreo@ejemplo.com">
+
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" required placeholder="••••••••">
+
+        <label for="username">Nombre de Usuario</label>
+        <input type="text" id="username" required placeholder="Tu nombre en la comunidad">
+
+        <button type="submit">Crear Mi Cuenta</button>
+    </form>
+</div>
 
     <!-- Menú de navegación -->
-    <nav class="mini-menu">
-        <ul>
-            <li><a href="escuelas.html">Proyectos de Escuelas</a></li>
-            <li><a href="eventos.html">Eventos o Ferias Artesanales</a></li>
-            <li><a href="Nosotros.html">Nosotros / Apoyo / Donaciones</a></li>
-            <li><a href="bitacora.html">Bitácora de Actualizaciones</a></li>
-        </ul>
-    </nav>
+<nav class="mini-menu">
+    <ul>
+        <li>
+            <img src="Seccion de escuelas inicio.jpg" alt="Escuelas">
+            <a href="escuelas.html">Proyectos de Escuelas</a>
+        </li>
+        <li>
+            <img src="seccion de eventos inicio.jpg" alt="Eventos">
+            <a href="eventos.html">Eventos o Ferias Artesanales</a>
+        </li>
+        <li>
+            <img src="seccion de donaciones inicio.jpg" alt="Nosotros">
+            <a href="Nosotros.html">Nosotros / Apoyo / Donaciones</a>
+        </li>
+        <li>
+            <img src="seccion de bitacora inicio.jpg" alt="Bitácora">
+            <a href="bitacora.html">Bitácora de Actualizaciones</a>
+        </li>
+    </ul>
+</nav>
+
+<section class="video-container">
+    <video autoplay loop muted playsinline>
+        <source src="d:\emi-repositorio\videos\video de muestra de la pagina.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+</section>
 
     <!-- Contenido principal -->
     <main>
-        <section id="mapaSaberes" onclick="location.href='mapa.html';" style="cursor: pointer;">
+        <section id="mapaSaberes" class="adornado" onclick="location.href='Trabajos.html';" style="cursor: pointer;">
             <h2>Mapa de Saberes</h2>
             <p>Explora los oficios tradicionales por región, con filtros por tipo de saber y acceso directo a fichas de expertos. Descubre las técnicas que han sido transmitidas de generación en generación.</p>
         </section>
 
-        <section id="historiasVivas" onclick="location.href='historias.html';" style="cursor: pointer;">
+        <section id="historiasVivas" class="adornado" onclick="location.href='historias.html';" style="cursor: pointer;">
             <h2>Historias Vivas</h2>
             <p>Sumérgete en relatos auténticos de artesanos y expertos. Accede a video-entrevistas, galerías de fotos de procesos artesanales y experiencias de vida que reflejan el legado cultural de cada oficio.</p>
         </section>
 
-        <section id="aprendeOficio" onclick="location.href='aprende.html';" style="cursor: pointer;">
+        <section id="aprendeOficio" class="adornado" onclick="location.href='Aprende un Oficio.html';" style="cursor: pointer;">
             <h2>Aprende un Oficio</h2>
             <p>Domina técnicas artesanales con tutoriales paso a paso, listas de materiales y herramientas necesarias. Recibe consejos de maestros que comparten su experiencia y conocimientos.</p>
         </section>        

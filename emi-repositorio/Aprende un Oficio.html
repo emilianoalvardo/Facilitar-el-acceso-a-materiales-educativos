@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende Técnicas Artesanales</title>
+    <link rel="stylesheet" href="Aprende un Oficiocss.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav-return">
+            <a href="principal.html" class="return-button">← Volver a Inicio</a>
+        </nav>
+        <h1>Aprende Técnicas Artesanales</h1>
+        <p class="header-description">Selecciona un tema para explorar videos, manuales y profesores especializados.</p>
+    </header>
+    
+    <main class="container">
+        <section id="topics" class="topics-grid">
+            <h2 class="section-title">Temas Disponibles</h2>
+            
+            <div class="topic-card" onclick="selectTopic('barro')">
+                <div class="topic-image">
+                    <img src="Aprende barro.jpg" alt="Artesanía en Barro">
+                </div>
+                <div class="topic-content">
+                    <h3>Barro Tradicional</h3>
+                    <p>Explora técnicas de modelado, esmaltado y cocción de barro.</p>
+                    <span class="topic-badge">Artesanía</span>
+                </div>
+            </div>
+
+            <div class="topic-card" onclick="selectTopic('pan')">
+                <div class="topic-image">
+                    <img src="Aprende Pan de Horno de Leña.jpg" alt="Pan Tradicional">
+                </div>
+                <div class="topic-content">
+                    <h3>Pan de Horno de Leña</h3>
+                    <p>Conoce recetas, técnicas y secretos para hornear pan tradicional.</p>
+                    <span class="topic-badge">Gastronomía</span>
+                </div>
+            </div>
+
+            <div class="topic-card" onclick="selectTopic('maiz')">
+                <div class="topic-image">
+                    <img src="Aprende Cultivo de Maíz Criollo.jpg" alt="Cultivo de Maíz">
+                </div>
+                <div class="topic-content">
+                    <h3>Cultivo de Maíz Criollo</h3>
+                    <p>Aprende cómo cultivar y preservar variedades de maíz criollo.</p>
+                    <span class="topic-badge">Agricultura</span>
+                </div>
+            </div>
+
+            <div class="topic-card" onclick="selectTopic('pirekua')">
+                <div class="topic-image">
+                    <img src="Aprende Pirekua.jpg" alt="Música Pirekua">
+                </div>
+                <div class="topic-content">
+                    <h3>Pirekua</h3>
+                    <p>Descubre la música tradicional purépecha y sus técnicas vocales.</p>
+                    <span class="topic-badge">Música</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="details" class="details-section" style="display: none;">
+            <button onclick="goBack()" class="back-button">← Volver</button>
+            <h2 id="topic-title" class="detail-title"></h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <h3>Videos</h3>
+                    <ul class="resource-list">
+                        <!-- Barro Videos -->
+                        <li data-topic="barro">
+                            <a href="#" class="resource-link video-link" data-video="videos/barro-tecnicas.mp4">
+                                <div class="resource-title">Técnicas básicas de modelado</div>
+                                <div class="resource-description">Aprende las técnicas fundamentales del trabajo en barro</div>
+                            </a>
+                        </li>
+                        <li data-topic="barro">
+                            <a href="#" class="resource-link video-link" data-video="videos/barro-acabados.mp4">
+                                <div class="resource-title">Acabados y decoración</div>
+                                <div class="resource-description">Técnicas de esmaltado y decoración tradicional</div>
+                            </a>
+                        </li>
+
+                        <!-- Pan Videos -->
+                        <li data-topic="pan">
+                            <a href="#" class="resource-link video-link" data-video="videos/pan-masa.mp4">
+                                <div class="resource-title">Preparación de masa tradicional</div>
+                                <div class="resource-description">Técnicas para hacer masa perfecta para pan artesanal</div>
+                            </a>
+                        </li>
+                        <li data-topic="pan">
+                            <a href="#" class="resource-link video-link" data-video="videos/pan-horneado.mp4">
+                                <div class="resource-title">Horneado en horno de leña</div>
+                                <div class="resource-description">Aprende a usar el horno tradicional de leña</div>
+                            </a>
+                        </li>
+
+                        <!-- Maíz Videos -->
+                        <li data-topic="maiz">
+                            <a href="#" class="resource-link video-link" data-video="videos/maiz-cultivo.mp4">
+                                <div class="resource-title">Técnicas de cultivo tradicional</div>
+                                <div class="resource-description">Métodos ancestrales de siembra y cultivo</div>
+                            </a>
+                        </li>
+                        <li data-topic="maiz">
+                            <a href="#" class="resource-link video-link" data-video="videos/maiz-semillas.mp4">
+                                <div class="resource-title">Conservación de semillas</div>
+                                <div class="resource-description">Cómo preservar las variedades criollas</div>
+                            </a>
+                        </li>
+
+                        <!-- Pirekua Videos -->
+                        <li data-topic="pirekua">
+                            <a href="#" class="resource-link video-link" data-video="videos/pirekua-tecnicas.mp4">
+                                <div class="resource-title">Técnicas vocales tradicionales</div>
+                                <div class="resource-description">Aprende las bases del canto purépecha</div>
+                            </a>
+                        </li>
+                        <li data-topic="pirekua">
+                            <a href="#" class="resource-link video-link" data-video="videos/pirekua-historia.mp4">
+                                <div class="resource-title">Historia y significado</div>
+                                <div class="resource-description">Conoce el origen y la importancia cultural</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="resource-card">
+                    <h3>Manuales</h3>
+                    <ul class="resource-list">
+                        <li>
+                            <a href="manuales/guia-barro.html" class="resource-link manual-link">
+                                <div class="resource-title">Guía completa de alfarería</div>
+                                <div class="resource-description">Manual detallado con técnicas paso a paso</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="manuales/materiales.html" class="resource-link manual-link">
+                                <div class="resource-title">Materiales y herramientas</div>
+                                <div class="resource-description">Todo lo que necesitas para empezar</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="resource-card">
+                    <h3>Profesores Especializados</h3>
+                    <ul class="resource-list">
+                        <li>
+                            <a href="profesores/juan-perez.html" class="resource-link teacher-link">
+                                <div class="resource-title">Maestro Juan Pérez</div>
+                                <div class="resource-description">30 años de experiencia en alfarería tradicional</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profesores/maria-lopez.html" class="resource-link teacher-link">
+                                <div class="resource-title">Maestra María López</div>
+                                <div class="resource-description">Especialista en técnicas decorativas</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="videoModal" class="video-modal">
+        <div class="video-modal-content">
+            <div class="video-controls">
+                <button id="muteButton" class="control-button">
+                    <span class="icon-volume">🔊</span>
+                </button>
+                <button class="close-button">×</button>
+            </div>
+            <div class="video-container">
+                <video id="videoPlayer" controls>
+                    Your browser does not support the video element.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Aprende Técnicas Artesanales. Todos los derechos reservados.</p>
+    </footer>
+    <script src="Aprende un Oficiojv.js"></script>
+</body>
+</html>

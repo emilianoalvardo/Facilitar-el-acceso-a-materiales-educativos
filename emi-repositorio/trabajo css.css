@@ -1,60 +1,356 @@
-/* Encabezado */
-.header-explora {
-    background-color: #8b4513;
-    color: white;
-    text-align: center;
-    padding: 30px;
+/* Variables globales */
+:root {
+    --primary-color: #8b4513;
+    --secondary-color: #d2691e;
+    --accent-color: #ffa500;
+    --background-color: #f9f6f2;
+    --text-color: #333;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Filtro de búsqueda */
-.busqueda {
-    width: 80%;
-    margin: auto;
+/* Estilos base */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Encabezado mejorado */
+.header-explora {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
     text-align: center;
-    padding: 20px;
+    padding: 4rem 2rem;
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+.header-explora h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.header-explora p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* Filtro de búsqueda mejorado */
+.busqueda {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
 }
 
 select {
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 2px solid #8b4513;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 200px;
 }
 
-/* Saberes tradicionales */
+select:hover {
+    border-color: var(--accent-color);
+}
+
+select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.1);
+}
+
+/* Contenedor de saberes mejorado */
 .saberes-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .saber-item {
-    width: 250px;
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
+    background: var(--card-background, #ffffff);
+    border-radius: 15px;
+    padding: 2rem;  /* Increased padding */
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 0.6s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* Specific borders for each category */
+.saber-item[data-categoria="artesanias"] {
+    border-color: #cd853f;
+}
+
+.saber-item[data-categoria="gastronomia"] {
+    border-color: #deb887;
+}
+
+.saber-item[data-categoria="agricultura"] {
+    border-color: #8fbc8f;
+}
+
+.saber-item[data-categoria="musica"] {
+    border-color: #8b4513;
+}
+
+/* Enhanced hover effects */
 .saber-item:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Category-specific hover effects */
+.saber-item[data-categoria="artesanias"]:hover {
+    box-shadow: 0 8px 20px rgba(205, 133, 63, 0.3);
+}
+
+.saber-item[data-categoria="gastronomia"]:hover {
+    box-shadow: 0 8px 20px rgba(222, 184, 135, 0.3);
+}
+
+.saber-item[data-categoria="agricultura"]:hover {
+    box-shadow: 0 8px 20px rgba(143, 188, 143, 0.3);
+}
+
+.saber-item[data-categoria="musica"]:hover {
+    box-shadow: 0 8px 20px rgba(139, 69, 19, 0.3);
+}
+
+/* Category badges */
+.categoria-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: white;
+}
+
+/* Badge colors */
+.categoria-badge[data-categoria="artesanias"] {
+    background-color: #cd853f;
+}
+
+.categoria-badge[data-categoria="gastronomia"] {
+    background-color: #deb887;
+}
+
+.categoria-badge[data-categoria="agricultura"] {
+    background-color: #8fbc8f;
+}
+
+.categoria-badge[data-categoria="musica"] {
+    background-color: #8b4513;
 }
 
 .saber-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
+    width: 90%;  /* Reduced from 100% to give some space */
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Pie de página */
+.saber-item h3 {
+    color: var(--primary-color);
+    margin: 1rem 0;
+    font-size: 1.25rem;
+}
+
+.saber-item p {
+    color: #666;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+/* Add button styles */
+.saber-button {
+    display: inline-block;
+    padding: 10px 25px;
+    margin-top: 1rem;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+/* Category-specific button colors */
+.saber-item[data-categoria="artesanias"] .saber-button {
+    background: #cd853f;
+}
+
+.saber-item[data-categoria="gastronomia"] .saber-button {
+    background: #deb887;
+}
+
+.saber-item[data-categoria="agricultura"] .saber-button {
+    background: #8fbc8f;
+}
+
+.saber-item[data-categoria="musica"] .saber-button {
+    background: #8b4513;
+}
+
+/* Button hover effects */
+.saber-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.saber-item[data-categoria="artesanias"] .saber-button:hover {
+    background: #b5723c;
+}
+
+.saber-item[data-categoria="gastronomia"] .saber-button:hover {
+    background: #c9a677;
+}
+
+.saber-item[data-categoria="agricultura"] .saber-button:hover {
+    background: #7ea57e;
+}
+
+.saber-item[data-categoria="musica"] .saber-button:hover {
+    background: #763a0f;
+}
+
+/* Pie de página mejorado */
 footer {
-    padding: 20px;
-    background-color: #8b4513;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     color: white;
     text-align: center;
+    padding: 3rem 2rem;
+    margin-top: 4rem;
+}
+
+/* Estilos mejorados para el botón de retorno */
+.nav-return {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    z-index: 1000;
+}
+
+.return-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.95);
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.return-button::before {
+    content: "←";
+    margin-right: 8px;
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+.return-button:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(139, 69, 19, 0.2);
+}
+
+.return-button:hover::before {
+    transform: translateX(-3px);
+}
+
+.return-button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 12px rgba(139, 69, 19, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-explora h1 {
+        font-size: 2rem;
+    }
+
+    .busqueda {
+        width: 95%;
+        padding: 1.5rem;
+    }
+
+    .saberes-container {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .nav-return {
+        top: 1rem;
+        left: 1rem;
+    }
+
+    .return-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mejoras de accesibilidad */
+:focus {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+/* Loader para carga dinámica */
+.loader {
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent-color) 0%, var(--primary-color) 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    animation: loading 2s infinite;
+}
+
+@keyframes loading {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
 }

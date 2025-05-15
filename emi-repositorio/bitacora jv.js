@@ -16,7 +16,16 @@ document.addEventListener("DOMContentLoaded", function() {
         { fecha: "29/04/2025", titulo: "Mini menús en encabezado", descripcion: "Implementación de mini menús debajo del encabezado.", motivo: "Facilitar el acceso rápido a secciones clave." },
         { fecha: "28/04/2025", titulo: "Sección de contacto con maestros", descripcion: "Se añadió una sección de contacto directo con los maestros.", motivo: "Fomentar la interacción entre usuarios y expertos en oficios." },
         { fecha: "27/04/2025", titulo: "Ajuste de colores", descripcion: "Se ajustaron los colores para mejorar contraste y legibilidad.", motivo: "Garantizar una mejor lectura y experiencia visual." },
-        { fecha: "26/04/2025", titulo: "Mejor organización de CSS", descripcion: "Reestructuración del CSS para una mayor organización.", motivo: "Facilitar la administración de estilos y futuras mejoras." }
+        { fecha: "26/04/2025", titulo: "Mejor organización de CSS", descripcion: "Reestructuración del CSS para una mayor organización.", motivo: "Facilitar la administración de estilos y futuras mejoras." },
+        
+        // *** NUEVOS CAMBIOS ***
+        { fecha: "12/05/2025", titulo: "Corrección de imágenes en listado de saberes", descripcion: "Se ajustaron rutas y nombres de archivos para asegurar que las imágenes de saberes se muestren correctamente.", motivo: "Evitar errores en la carga de imágenes y mejorar la presentación visual." },
+        { fecha: "12/05/2025", titulo: "Mejor visualización del mini menú", descripcion: "Se agregaron estilos flexibles para mejorar la disposición de imágenes y enlaces en el mini menú.", motivo: "Garantizar que los elementos del menú sean más claros y visibles para los usuarios." },
+        { fecha: "12/05/2025", titulo: "Carrusel de imágenes en el encabezado", descripcion: "Implementación de un carrusel en el encabezado que cambia imágenes cada 2 segundos de manera infinita.", motivo: "Agregar dinamismo y mejorar la presentación visual del sitio." },
+        { fecha: "12/05/2025", titulo: "Reproducción infinita de video", descripcion: "Se implementó una sección para reproducir un video en bucle infinito.", motivo: "Facilitar la presentación de contenido audiovisual sin interrupciones." },
+        { fecha: "12/05/2025", titulo: "Mejor organización y tamaño del video", descripcion: "Se ajustó el tamaño y centramiento del video para que no sobresalga del contenedor.", motivo: "Mejorar la presentación y evitar recortes en la visualización del video." },
+        { fecha: "12/05/2025", titulo: "Encabezado más profesional", descripcion: "Se mejoró el diseño del encabezado utilizando Flexbox, sombras suaves y ajustes tipográficos.", motivo: "Mantener la sencillez sin perder un aspecto profesional y atractivo." },
+        { fecha: "12/05/2025", titulo: "Adornos alrededor de secciones", descripcion: "Se añadieron adornos decorativos alrededor de la sección 'Mapa de Saberes' utilizando pseudo-elementos.", motivo: "Enriquecer el aspecto visual del sitio sin perder su diseño limpio." }
     ];
 
     // Agregar los cambios a la bitácora

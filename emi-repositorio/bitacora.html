@@ -3,28 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bitácora de Actualizaciones</title>
+    <meta name="description" content="Registro de actualizaciones y mejoras de la plataforma Saberes Vivos">
+    <title>Bitácora de Actualizaciones | Saberes Vivos</title>
     <link rel="stylesheet" href="bitacora css.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navegación -->
+    <nav class="nav-return">
+        <a href="principal.html" class="return-button">Volver a Inicio</a>
+    </nav>
 
-<div class="bitacora-header">
-    <h1>Bitácora de Actualizaciones</h1>
-    <p>Seguimos mejorando nuestra plataforma gracias a ustedes. Aquí encontrarás los cambios y mejoras realizadas en la página. 
-       ¡Gracias por acompañarnos en este proceso de crecimiento y preservación cultural!</p>
-</div>
+    <!-- Encabezado -->
+    <header class="bitacora-header">
+        <div class="header-content">
+            <h1>Bitácora de Actualizaciones</h1>
+            <p class="header-description">Seguimos mejorando nuestra plataforma gracias a ustedes. Aquí encontrarás los cambios 
+               y mejoras realizadas en la página. ¡Gracias por acompañarnos en este proceso de crecimiento y preservación cultural!</p>
+        </div>
+    </header>
 
-    <main>
-<section id="bitacora">
-    <h2>Historial de Cambios</h2>
-    <div id="registro"></div>
-</section>
+    <main class="contenido-principal">
+        <section id="bitacora" class="seccion-bitacora">
+            <h2>Historial de Cambios</h2>
+            
+            <!-- Filtro de fechas -->
+            <div class="filtro-container">
+                <label for="filtroFecha">Filtrar por fecha:</label>
+                <select id="filtroFecha">
+                    <option value="todos">Todas las actualizaciones</option>
+                    <option value="2025">2025</option>
+                    <option value="2024">2024</option>
+                </select>
+            </div>
+
+            <!-- Timeline de actualizaciones -->
+            <div class="timeline">
+                <!-- Mayo 2025 -->
+                <article class="actualizacion-item">
+                    <div class="fecha">
+                        <span class="mes">Mayo</span>
+                        <span class="año">2025</span>
+                    </div>
+                    <div class="contenido">
+                        <h3>Mejoras en la Experiencia de Usuario</h3>
+                        <ul class="lista-cambios">
+                            <li><span class="tipo mejora">Mejora</span> Rediseño completo de la interfaz de usuario</li>
+                            <li><span class="tipo optimizacion">Optimización</span> Mejora del rendimiento general del sitio</li>
+                            <li><span class="tipo nuevo">Nuevo</span> Sistema avanzado de búsqueda de saberes</li>
+                            <li><span class="tipo mejora">Mejora</span> Navegación más intuitiva entre secciones</li>
+                            <li><span class="tipo accesibilidad">Accesibilidad</span> Mejoras en el contraste y legibilidad</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Abril 2025 -->
+                <article class="actualizacion-item">
+                    <div class="fecha">
+                        <span class="mes">Abril</span>
+                        <span class="año">2025</span>
+                    </div>
+                    <div class="contenido">
+                        <h3>Expansión de Funcionalidades</h3>
+                        <ul class="lista-cambios">
+                            <li><span class="tipo nuevo">Nuevo</span> Sistema de registro y autenticación de usuarios</li>
+                            <li><span class="tipo nuevo">Nuevo</span> Galería interactiva de oficios tradicionales</li>
+                            <li><span class="tipo integracion">Integración</span> Conexión con redes sociales</li>
+                            <li><span class="tipo mejora">Mejora</span> Sistema de comentarios y valoraciones</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Marzo 2025 -->
+                <article class="actualizacion-item">
+                    <div class="fecha">
+                        <span class="mes">Marzo</span>
+                        <span class="año">2025</span>
+                    </div>
+                    <div class="contenido">
+                        <h3>Expansión de Contenido Cultural</h3>
+                        <ul class="lista-cambios">
+                            <li><span class="tipo contenido">Contenido</span> 10 nuevos oficios tradicionales documentados</li>
+                            <li><span class="tipo multimedia">Multimedia</span> Videos tutoriales de técnicas artesanales</li>
+                            <li><span class="tipo nuevo">Nuevo</span> Calendario de eventos culturales</li>
+                            <li><span class="tipo contenido">Contenido</span> Historias de maestros artesanos locales</li>
+                            <li><span class="tipo documentacion">Documentación</span> Guías paso a paso de técnicas tradicionales</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Febrero 2025 -->
+                <article class="actualizacion-item">
+                    <div class="fecha">
+                        <span class="mes">Febrero</span>
+                        <span class="año">2025</span>
+                    </div>
+                    <div class="contenido">
+                        <h3>Lanzamiento Inicial</h3>
+                        <ul class="lista-cambios">
+                            <li><span class="tipo lanzamiento">Lanzamiento</span> Primera versión de Saberes Vivos</li>
+                            <li><span class="tipo contenido">Contenido</span> Catálogo inicial de oficios tradicionales</li>
+                            <li><span class="tipo estructura">Estructura</span> Diseño base de la plataforma</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Contenedor dinámico para actualizaciones -->
+            <div id="registro" class="registro-container"></div>
+        </section>
     </main>
 
-    <footer>
-        <p>© 2025 Saberes Vivos - Registro de cambios</p>
+    <footer class="footer-bitacora">
+        <div class="footer-content">
+            <p>© 2025 Saberes Vivos - Registro de cambios</p>
+            <div class="social-links">
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">Instagram</a>
+            </div>
+        </div>
     </footer>
 
     <script src="bitacora jv.js"></script>
 </body>
 </html>
+``` 

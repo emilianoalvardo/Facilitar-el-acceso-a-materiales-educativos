@@ -4,56 +4,264 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barro Tradicional | Saberes Vivos</title>
+    <!-- Cambia esta línea para que coincida exactamente con el nombre del archivo -->
     <link rel="stylesheet" href="barro css.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navegación -->
+    <nav class="nav-return">
+        <a href="Trabajos.html" class="return-button">Volver a Saberes</a>
+    </nav>
 
-    <!-- Encabezado -->
-    <header class="header-trabajo">
+    <!-- Hero Section -->
+    <div class="hero-section">
         <h1>Barro Tradicional</h1>
-        <p>El arte del barro ha sido transmitido de generación en generación, preservando técnicas ancestrales en Michoacán.</p>
-    </header>
+        <p class="subtitle">Una tradición viva de Michoacán</p>
+    </div>
 
-    <!-- Sección de imágenes -->
-    <section class="imagenes-trabajo">
-        <h2>Imágenes del proceso</h2>
-        <div class="imagenes-container">
-            <img src="Barro 1.jpg" alt="Modelado del barro">
-            <img src="barro 2.jpg" alt="Piezas en secado">
-            <img src="barro3.jpg" alt="Horneado tradicional">
-        </div>
-    </section>
+    <main class="detalle-saber">
+        <!-- Historia y Significado -->
+        <section class="info-section historia">
+            <h2>Historia y Significado Cultural</h2>
+            <p class="destacado">El arte del barro en Michoacán representa más de 3,000 años de historia y tradición, siendo uno de los pilares fundamentales de la identidad cultural purépecha.</p>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Origen</h3>
+                    <p>Las técnicas de alfarería en Michoacán se remontan a la época prehispánica, donde los artesanos purépechas desarrollaron métodos únicos de modelado y decoración.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Importancia Cultural</h3>
+                    <p>Cada pieza de barro cuenta una historia, transmitiendo la cosmovisión y tradiciones de nuestros ancestros a las nuevas generaciones.</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- Descripción detallada -->
-    <section class="descripcion-trabajo">
-        <h2>¿Qué es el Barro Tradicional?</h2>
-        <p>El barro tradicional es una técnica milenaria utilizada por artesanos purépechas en Michoacán. Con un proceso manual que involucra la recolección de arcilla, modelado, secado y horneado, cada pieza es única.</p>
-        <p>Este oficio no solo representa arte, sino identidad y cultura. Las técnicas han sido refinadas con el tiempo, incorporando diseños que reflejan la cosmovisión indígena.</p>
-    </section>
+        <!-- Galería Mejorada -->
+        <section class="gallery-section">
+            <h2>Galería de Técnicas</h2>
+            <div class="proceso-descripcion">
+                <div class="proceso-header">
+                    <h3>El Proceso del Barro</h3>
+                    <p class="proceso-intro">El trabajo en barro es un proceso ancestral que requiere paciencia, habilidad y conocimiento profundo de la materia prima. Cada paso es fundamental para crear piezas duraderas y hermosas.</p>
+                </div>
+                <div class="proceso-pasos">
+                    <div class="paso">
+                        <span class="paso-numero">1</span>
+                        <h4>Selección del Barro</h4>
+                        <p>Identificación y preparación de arcillas locales de alta calidad.</p>
+                    </div>
+                    <div class="paso">
+                        <span class="paso-numero">2</span>
+                        <h4>Preparación</h4>
+                        <p>Limpieza, hidratación y amasado para lograr la consistencia ideal.</p>
+                    </div>
+                    <div class="paso">
+                        <span class="paso-numero">3</span>
+                        <h4>Modelado</h4>
+                        <p>Aplicación de técnicas tradicionales para dar forma a la pieza.</p>
+                    </div>
+                    <div class="paso">
+                        <span class="paso-numero">4</span>
+                        <h4>Acabado</h4>
+                        <p>Decoración y preparación final antes del proceso de cocción.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-grid">
+                <figure class="gallery-item">
+                    <img src="barro imagen 1.jfif" alt="Proceso de modelado">
+                    <figcaption>Técnicas de modelado tradicional</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="barro imagen 2.jfif" alt="Horno tradicional">
+                    <figcaption>Horno de leña ancestral</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="barro imagen 3.jfif" alt="Acabados finales">
+                    <figcaption>Proceso de decoración y acabados</figcaption>
+                </figure>
+            </div>
+        </section>
 
-    <!-- Formulario de solicitud -->
-    <section class="formulario-solicitud">
-        <h2>Solicita los Materiales para Aprender</h2>
-        <form id="solicitud-form" onsubmit="enviarSolicitud(event)">
-            <label for="nombre">Nombre Completo:</label>
-            <input type="text" id="nombre" required>
+        <!-- Técnicas y Métodos -->
+        <section class="tecnicas-section">
+            <h2>Técnicas Tradicionales</h2>
+            <div class="tecnicas-grid">
+                <div class="tecnica-card">
+                    <i class="icon-modelado"></i>
+                    <h3>Modelado Manual</h3>
+                    <ul>
+                        <li>Preparación de la arcilla</li>
+                        <li>Amasado y eliminación de burbujas</li>
+                        <li>Técnicas de pellizco y rollos</li>
+                        <li>Modelado de formas básicas</li>
+                    </ul>
+                </div>
+                
+                <div class="tecnica-card">
+                    <i class="icon-torno"></i>
+                    <h3>Trabajo en Torno</h3>
+                    <ul>
+                        <li>Centrado de la pieza</li>
+                        <li>Levantamiento de paredes</li>
+                        <li>Control de grosor</li>
+                        <li>Acabados en torno</li>
+                    </ul>
+                </div>
+                
+                <div class="tecnica-card">
+                    <i class="icon-decoracion"></i>
+                    <h3>Decoración Tradicional</h3>
+                    <ul>
+                        <li>Diseños prehispánicos</li>
+                        <li>Aplicación de engobes</li>
+                        <li>Bruñido tradicional</li>
+                        <li>Técnicas de pintado</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-            <label for="correo">Correo Electrónico:</label>
-            <input type="email" id="correo" required>
+        <!-- Encuesta -->
+        <section class="survey-section">
+            <h2>Encuesta sobre el Oficio del Barro</h2>
+            <form id="surveyForm" class="survey-form">
+                <!-- Información Personal -->
+                <div class="form-group">
+                    <h3>Información Personal</h3>
+                    
+                    <div class="form-field">
+                        <label for="nombre">1. Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
 
-            <label for="materiales">Materiales que necesitas:</label>
-            <textarea id="materiales" rows="4" required></textarea>
+                    <div class="form-field">
+                        <label for="edad">2. Edad:</label>
+                        <select id="edad" name="edad" required>
+                            <option value="">Seleccione su rango de edad</option>
+                            <option value="18-25">18-25 años</option>
+                            <option value="26-35">26-35 años</option>
+                            <option value="36-45">36-45 años</option>
+                            <option value="46-55">46-55 años</option>
+                            <option value="56+">56 años o más</option>
+                        </select>
+                    </div>
 
-            <button type="submit">Enviar Solicitud</button>
-        </form>
-        <p id="mensaje-confirmacion" style="display:none;">Tu solicitud ha sido enviada. Recibirás una aprobación en unos días.</p>
-    </section>
+                    <div class="form-field">
+                        <label for="localidad">3. Localidad:</label>
+                        <input type="text" id="localidad" name="localidad" required>
+                    </div>
+                </div>
 
-    <footer>
+                <!-- Experiencia en el Oficio -->
+                <div class="form-group">
+                    <h3>Experiencia en el Oficio</h3>
+                    
+                    <div class="form-field">
+                        <label for="experiencia">4. ¿Cuántos años lleva trabajando con barro?</label>
+                        <select id="experiencia" name="experiencia" required>
+                            <option value="">Seleccione su experiencia</option>
+                            <option value="ninguna">Sin experiencia</option>
+                            <option value="1-5">1-5 años</option>
+                            <option value="6-10">6-10 años</option>
+                            <option value="11-20">11-20 años</option>
+                            <option value="20+">Más de 20 años</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label>5. ¿Qué técnicas domina? (Seleccione todas las que apliquen)</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="tecnicas" value="modelado">
+                                Modelado a mano
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="tecnicas" value="torno">
+                                Trabajo en torno
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="tecnicas" value="decoracion">
+                                Decoración
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="tecnicas" value="horneado">
+                                Horneado tradicional
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aspectos Socioeconómicos -->
+                <div class="form-group">
+                    <h3>Aspectos Socioeconómicos</h3>
+                    
+                    <div class="form-field">
+                        <label for="dedicacion">6. ¿Es su actividad principal?</label>
+                        <select id="dedicacion" name="dedicacion" required>
+                            <option value="">Seleccione una opción</option>
+                            <option value="tiempo-completo">Sí, tiempo completo</option>
+                            <option value="tiempo-parcial">Tiempo parcial</option>
+                            <option value="hobby">Como hobby</option>
+                            <option value="aprendiz">Estoy aprendiendo</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="ingresos">7. ¿Qué porcentaje de sus ingresos proviene de este oficio?</label>
+                        <select id="ingresos" name="ingresos" required>
+                            <option value="">Seleccione un porcentaje</option>
+                            <option value="0-25">0-25%</option>
+                            <option value="26-50">26-50%</option>
+                            <option value="51-75">51-75%</option>
+                            <option value="76-100">76-100%</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Aprendizaje y Transmisión -->
+                <div class="form-group">
+                    <h3>Aprendizaje y Transmisión del Oficio</h3>
+                    
+                    <div class="form-field">
+                        <label for="aprendizaje">8. ¿Cómo aprendió el oficio?</label>
+                        <select id="aprendizaje" name="aprendizaje" required>
+                            <option value="">Seleccione una opción</option>
+                            <option value="familia">Tradición familiar</option>
+                            <option value="maestro">Con un maestro artesano</option>
+                            <option value="curso">Cursos/Talleres</option>
+                            <option value="autodidacta">Autodidacta</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label>9. ¿Enseña el oficio a otros?</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="enseña" value="si" required>
+                                Sí
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="enseña" value="no">
+                                No
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="comentarios">10. ¿Qué sugerencias tiene para preservar este oficio?</label>
+                        <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-button">Enviar Encuesta</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer-trabajos">
         <p>© 2025 Saberes Vivos - Preservando el conocimiento ancestral</p>
     </footer>
-
-    <script src="barro jv.js"></script>
-
 </body>
 </html>

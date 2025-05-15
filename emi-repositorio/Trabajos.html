@@ -5,37 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explora los Saberes de Michoacán</title>
     <link rel="stylesheet" href="trabajo css.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Botón de regreso -->
+    <nav class="nav-return">
+        <a href="principal.html" class="return-button">Volver a Inicio</a>
+    </nav>
 
-    <!-- Encabezado -->
+    <!-- Encabezado mejorado -->
     <header class="header-explora">
-        <h1>Explora los Saberes de Michoacán</h1>
-        <p>Descubre los oficios tradicionales que han dado identidad y cultura a la región.</p>
+        <div class="header-content">
+            <h1>Explora los Saberes de Michoacán</h1>
+            <p class="header-description">Descubre los oficios tradicionales que han dado identidad y cultura a la región.</p>
+        </div>
     </header>
 
-    <!-- Filtro de búsqueda -->
+    <!-- Filtro de búsqueda mejorado -->
     <section class="busqueda">
-        <h2>Filtrar por tipo de saber</h2>
-        <select id="categoria" onchange="filtrarSaberes()">
-            <option value="todos">Todos</option>
-            <option value="artesanias">Artesanías</option>
-            <option value="gastronomia">Gastronomía</option>
-            <option value="agricultura">Agricultura</option>
-            <option value="musica">Música tradicional</option>
-        </select>
+        <div class="filter-container">
+            <h2>Filtrar por tipo de saber</h2>
+            <select id="categoria" onchange="filtrarSaberes()">
+                <option value="todos">Todos los saberes</option>
+                <option value="artesanias">Artesanías</option>
+                <option value="gastronomia">Gastronomía</option>
+                <option value="agricultura">Agricultura</option>
+                <option value="musica">Música tradicional</option>
+            </select>
+        </div>
     </section>
 
-    <!-- Saberes tradicionales -->
+    <!-- Contenedor de saberes mejorado -->
     <section class="saberes-container" id="saberes">
-        <!-- Se insertarán dinámicamente los saberes desde JavaScript -->
+        <div class="loading-indicator">Cargando saberes...</div>
     </section>
 
-    <footer>
+    <footer class="footer-trabajos">
         <p>© 2025 Saberes Vivos - Preservando el conocimiento ancestral</p>
     </footer>
 
     <script src="traba jv.js"></script>
-
 </body>
 </html>
